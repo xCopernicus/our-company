@@ -1,0 +1,131 @@
+/* Variables */
+/* Global */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Spartan", sans-serif;
+  font-weight: normal;
+  background-color: white;
+  color: #576574;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+section {
+  padding: 96px 0;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+}
+
+.btn {
+  border-radius: 30px;
+  padding: 10px 50px;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navigation */
+.nav-bar {
+  font-family: "Roboto", sans-serif;
+  height: 100px;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.logo {
+  -ms-flex: 0 0 10%;
+      flex: 0 0 10%;
+  height: 100%;
+  text-align: center;
+  padding: 25px;
+}
+
+.logo i {
+  height: 100%;
+  width: 100%;
+  font-size: 50px;
+}
+
+.menu {
+  -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+  height: 100%;
+}
+
+.list-menu {
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 36px 0;
+}
+
+.list-menu li {
+  display: inline-block;
+  padding-left: 28px;
+  font-size: 14px;
+}
+
+.list-menu a {
+  padding: 15px 10px;
+}
+
+/* Splash */
+.splash {
+  background-image: url("https://i.postimg.cc/bwVCqpk6/high-rise-buildings-during-nighttime-1366957.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  color: white;
+}
+
+.welcome-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.welcome-text h1 {
+  font-size: 42px;
+  margin: 0;
+  font-weight: 100;
+}
+
+.welcome-text h1 span {
+  font-weight: 700;
+}
+
+.welcome-text h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  margin-bottom: 60px;
+  letter-spacing: 0.05em;
+}
+
+.btn-splash {
+  border: 2px solid;
+}
+/*# sourceMappingURL=style.css.map */
