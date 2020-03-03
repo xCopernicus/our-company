@@ -52,10 +52,6 @@ section {
   transition: 0.5s;
 }
 
-.btn:hover {
-  background-color: $color-secondary;
-}
-
 .section-title {
   position: relative;
   margin-bottom: 42px;
@@ -169,6 +165,10 @@ a {
   border: 2px solid;
 }
 
+.btn-splash:hover {
+  background-color: $color-primary;
+}
+
 /* About */
 
 .about {
@@ -213,4 +213,8 @@ a {
 .btn-about {
   background-color: $color-primary;
   color: white;
+}
+
+.btn-about:hover {
+  background-color: $color-secondary;
 }
