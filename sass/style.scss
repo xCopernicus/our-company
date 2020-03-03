@@ -1,8 +1,10 @@
 /* Variables */
 
-$color-primary: #1dd1a1;
-$color-secondary: #c8d6e5;
-$color-text: #576574;
+$color-primary: #2ed573;
+$color-secondary: #ff4757;
+$color-background: #f1f2f6;
+$color-text: #747d8c;
+$color-text-title: #57606f;
 $font-text: 'Spartan', sans-serif;
 $font-header: 'Roboto', sans-serif;
 
@@ -15,7 +17,7 @@ $font-header: 'Roboto', sans-serif;
 body {
   margin: 0;
   font-family: $font-text;
-  font-weight: normal;
+  font-weight: 400;
   background-color: white;
   color: $color-text;
   font-size: 14px;
@@ -23,7 +25,7 @@ body {
 }
 
 section {
-    padding: 96px 0;
+    padding: 70px 0;
 }
 
 .container {
@@ -37,14 +39,43 @@ section {
   flex-flow: wrap;
 }
 
+.col-3 {
+  flex: 25%;
+}
+
 .btn {
   border-radius: 30px;
   padding: 10px 50px;
   font-family: $font-header;
+  font-size: 12px;
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background-color: $color-secondary;
 }
 
 .section-title {
+  position: relative;
+  margin-bottom: 42px;
+}
 
+.section-title:before {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 30px;
+  background-color: $color-primary;
+  bottom: -16px;
+  transform: translateX(-50%);
+}
+
+.section-title h2 {
+  font-weight: 300;
+  font-size: 42px;
+  margin: 0;
+  color: $color-text-title;
 }
 
 a {
@@ -56,6 +87,7 @@ a {
 
 .nav-bar {
   font-family: $font-header;
+  font-weight: 700;
   height: 100px;
   justify-content: space-between;
   align-items: center;
@@ -130,8 +162,55 @@ a {
   font-size: 18px;
   margin-bottom: 60px;
   letter-spacing: 0.05em;
+  font-weight: 400;
 }
 
 .btn-splash {
   border: 2px solid;
+}
+
+/* About */
+
+.about {
+  height: 100vh;
+  text-align: center;
+}
+
+.branches {
+  margin: 100px 0;
+}
+
+.branch {
+  padding: 5px;
+  h3 {
+    font-family: $font-header;
+    color: black;
+    font-size: 22px;
+    letter-spacing: 0.05em;
+    font-weight: 400;
+  }
+  p {
+    margin-top: 25px;
+  }
+}
+
+.logo-branch {
+  color: $color-text;
+  font-size: 50px;
+  padding: 50px;
+  background-color: $color-background;
+  border-radius: 50%;
+  width: 150px;
+  margin-bottom: 40px;
+  transition: 0.5s;
+}
+
+.logo-branch:hover {
+  background-color: $color-primary;
+  color: white;
+}
+
+.btn-about {
+  background-color: $color-primary;
+  color: white;
 }

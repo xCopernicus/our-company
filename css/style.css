@@ -7,15 +7,15 @@
 body {
   margin: 0;
   font-family: "Spartan", sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   background-color: white;
-  color: #576574;
+  color: #747d8c;
   font-size: 14px;
   line-height: 1.7;
 }
 
 section {
-  padding: 96px 0;
+  padding: 70px 0;
 }
 
 .container {
@@ -31,10 +31,44 @@ section {
       flex-flow: wrap;
 }
 
+.col-3 {
+  -ms-flex: 25%;
+      flex: 25%;
+}
+
 .btn {
   border-radius: 30px;
   padding: 10px 50px;
   font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background-color: #ff4757;
+}
+
+.section-title {
+  position: relative;
+  margin-bottom: 42px;
+}
+
+.section-title:before {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 30px;
+  background-color: #2ed573;
+  bottom: -16px;
+  transform: translateX(-50%);
+}
+
+.section-title h2 {
+  font-weight: 300;
+  font-size: 42px;
+  margin: 0;
+  color: #57606f;
 }
 
 a {
@@ -45,6 +79,7 @@ a {
 /* Navigation */
 .nav-bar {
   font-family: "Roboto", sans-serif;
+  font-weight: 700;
   height: 100px;
   -ms-flex-pack: justify;
       justify-content: space-between;
@@ -123,9 +158,57 @@ a {
   font-size: 18px;
   margin-bottom: 60px;
   letter-spacing: 0.05em;
+  font-weight: 400;
 }
 
 .btn-splash {
   border: 2px solid;
+}
+
+/* About */
+.about {
+  height: 100vh;
+  text-align: center;
+}
+
+.branches {
+  margin: 100px 0;
+}
+
+.branch {
+  padding: 5px;
+}
+
+.branch h3 {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-size: 22px;
+  letter-spacing: 0.05em;
+  font-weight: 400;
+}
+
+.branch p {
+  margin-top: 25px;
+}
+
+.logo-branch {
+  color: #747d8c;
+  font-size: 50px;
+  padding: 50px;
+  background-color: #f1f2f6;
+  border-radius: 50%;
+  width: 150px;
+  margin-bottom: 40px;
+  transition: 0.5s;
+}
+
+.logo-branch:hover {
+  background-color: #2ed573;
+  color: white;
+}
+
+.btn-about {
+  background-color: #2ed573;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
